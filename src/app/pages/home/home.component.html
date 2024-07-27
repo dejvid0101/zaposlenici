@@ -1,0 +1,18 @@
+
+<nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/page-name">Page Name</a>
+  <!-- other links -->
+</nav>
+
+  @if (isLoading) {
+    <div>Loading...</div>
+  } @else {
+    <div>Loaded</div>
+  }
+
+  @for (employee of employees; track employee.id) {
+    {{ employee.firstName }}
+  }
+
+  <router-outlet></router-outlet>
